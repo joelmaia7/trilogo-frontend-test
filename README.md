@@ -28,5 +28,6 @@ Para dar início ao desafio, o candidato deve dar um fork no repositório e, ao 
 * Utilização de React Hooks
 * Implementação de testes unitários
 * CSS Modules
+* Utilização do Ant Design (biblioteca React UI)
 
 Os itens extras (opcionais) contarão positivamente na análise do seu desafio.
