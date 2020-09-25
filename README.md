@@ -1,74 +1,32 @@
-# Desafio Backend #
+# Desafio Front-End #
 
-Nesse desafio, a tarefa é implementar uma API REST que tenha os endpoints de um CRUD de Tickets do Trílogo. Eles deverão fazer parte da rota  _/api/tickets_.
+Nesse desafio, a tarefa é implementar um CRUD de Tickets, sendo listados e gerenciados em um quadro Kanban.
 
 Um Ticket consiste de uma ocorrência de algum problema, com os seguintes campos:
 
-* Description: uma descrição do problema
-* AuthorName: nome do autor do Ticket
-* Date: data de criação do ticket
+* Descrição: Texto - uma descrição do problema
+* Tipo: Select com opções "Bem", "Procedimento" e "Predial"
+* Responsável: Select com nomes de usuários
+* Imagem: Dropzone para arquivos
 
-A API deverá ser implementada em ASP.NET Core, utilizando o ORM Entity Framework Core para a persistência de dados.
+O kanban deverá conter 4 colunas, que representarão os status do ticket: Aberto, Executado, Vistoriado e Arquivado.
+* Cada ticket deverá aparecer como card no kanban.
+* Todo novo ticket deve ter o status aberto e ser incluído na coluna "Aberto".
+* O card deverá conter um botão de opções, com as opções de editar e excluir o ticket.
+* O card poderá ser movido para outra coluna, porém seguindo o seguinte fluxo: Aberto > Executado > Vistoriado > Arquivado;
+* Ao mover o card para outra coluna, deverá exibir um modal de alerta para o usuário confirmar se deseja realizar a operação.
 
-Para dar início ao desafio, o candidato deve dar um fork no repositório e, ao fim do desenvolvimento, dar acesso ao usuário **_washington@trilogo.com.br_** e ao usuário **_hugo@trilogo.com.br_** ao seu repositório para análise do trabalho.
+Os registros deverão ser armazenados na memória do navegador, de forma que os dados não se percam ao atualizar a página.
+
+O projeto deverá ser implementando em Javascript, utilizando React JS com Redux para gerência de estado.
+
+Para dar início ao desafio, o candidato deve dar um fork no repositório e, ao fim do desenvolvimento, dar acesso ao usuário **_joel@trilogo.com.br_** ao seu repositório para análise do trabalho.
+
 
 **Extras**
 
-* Utilização de um segundo ORM (Dapper, por exemplo) para a realização de leituras no banco de dados
-* Implementação de um mecanismo de autorização (uso de JWT, por exemplo) para validar as chamadas aos endpoints
+* Utilização de React Hooks
 * Implementação de testes unitários
-* Aplicação de boas práticas (KISS, DRY, SOLID etc.)
+* CSS Modules
 
 Os itens extras (opcionais) contarão positivamente na análise do seu desafio.
-
-### POST `/api/tickets/`
-Esse endpoint recebe um objeto JSON para a criação de um novo ticket
-
-```json
-{
-   "Description":"Lâmpada queimada",
-   "AuthorName":"Washington",
-   "Date":"26/11/2015",
-}
-```
-
-### PUT `/api/tickets/{id}`
-Endpoint que realiza a alteração de um ticket de um determinado _id_
-
-_FromForm_
-```json
-{
-   "Description":"Lâmpada com mal contato",
-   "AuthorName":"null", (optional)
-   "Date":"null", (optional)
-}
-```
-
-### DELETE `/api/tickets/{id}`
-Realiza a deleção de um determinado ticket com _id_ passado como parâmetro
-
-### GET `/api/tickets`
-Lista todos os tickets cadastrados
-
-```json
-[
-  {
-   "Id":1,
-   "Description":"Lâmpada queimada",
-   "AuthorName":"Washington",
-   "Date":"26/11/2019"
-  },
-  {
-   "Id":2,
-   "Description":"Pintar parede",
-   "AuthorName":"Pedro",
-   "Date":"12/12/2019"
-  },
-  {
-   "Id":3,
-   "Description":"Monitor com defeito",
-   "AuthorName":"João",
-   "Date":"07/01/2020"
-  },
-]
-```
