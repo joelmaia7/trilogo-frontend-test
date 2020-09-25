@@ -7,7 +7,7 @@ Um Ticket consiste de uma ocorrência de algum problema, com os seguintes campos
 * Descrição: Texto - uma descrição do problema
 * Tipo: Select com opções "Bem", "Procedimento" e "Predial"
 * Responsável: Select com nomes de usuários
-* Imagem: Dropzone para arquivos
+* Campo para imagem será um diferencial
 
 O kanban deverá conter 4 colunas, que representarão os status do ticket: Aberto, Executado, Vistoriado e Arquivado.
 * Cada ticket deverá aparecer como card no kanban.
@@ -31,3 +31,6 @@ Para dar início ao desafio, o candidato deve dar um fork no repositório e, ao 
 * Utilização do Ant Design (biblioteca React UI)
 
 Os itens extras (opcionais) contarão positivamente na análise do seu desafio.
+
+Arquivos de layout:
+
