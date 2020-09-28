@@ -33,4 +33,4 @@ Para dar início ao desafio, o candidato deve dar um fork no repositório e, ao 
 Os itens extras (opcionais) contarão positivamente na análise do seu desafio.
 
 Arquivos de layout:
-
+https://www.figma.com/file/nfjOAtSRFGj9zXNBa18INs/Desafio-front?node-id=12%3A20
