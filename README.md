@@ -20,7 +20,7 @@ Os registros deverão ser armazenados na memória do navegador, de forma que os 
 
 O projeto deverá ser implementando em Javascript, utilizando React JS com Redux para gerência de estado.
 
-Para dar início ao desafio, o candidato deve dar um fork no repositório e, ao fim do desenvolvimento, dar acesso ao usuário **_joel@trilogo.com.br_** ao seu repositório para análise do trabalho.
+Para dar início ao desafio, o candidato deve dar um fork neste repositório e, ao fim do desenvolvimento, dar acesso ao usuário **_joel@trilogo.com.br_** ao seu repositório para análise do trabalho.
 
 
 **Extras**
