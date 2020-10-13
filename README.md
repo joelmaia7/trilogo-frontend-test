@@ -13,7 +13,7 @@ O kanban deverá conter 4 colunas, que representarão os status do ticket: Abert
 * Cada ticket deverá aparecer como card no kanban.
 * Todo novo ticket deve ter o status aberto e ser incluído na coluna "Aberto".
 * O card deverá conter um botão de opções, com as opções de editar e excluir o ticket.
-* O card poderá ser movido para outra coluna, porém seguindo o seguinte fluxo: Aberto > Executado > Vistoriado > Arquivado;
+* O card poderá ser movido para outra coluna (drag and drop), porém seguindo o seguinte fluxo: Aberto > Executado > Vistoriado > Arquivado;
 * Ao mover o card para outra coluna, deverá exibir um modal de alerta para o usuário confirmar se deseja realizar a operação.
 
 Os registros deverão ser armazenados na memória do navegador, de forma que os dados não se percam ao atualizar a página.
